@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Страница не найдена | Ника Формат</title>
+<meta name="description" content="Страница не найдена. Вернитесь на главную страницу сайта архитектурно-проектного бюро «Ника Формат».">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404 - Страница не найдена | Ника Формат">
+<meta property="og:description" content="Страница не найдена. Вернитесь на главную страницу сайта архитектурно-проектного бюро «Ника Формат».">
+<meta property="og:image" content="https://nikaformat.ru/logo-light.png">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="404 - Страница не найдена | Ника Формат">
+<meta name="twitter:description" content="Страница не найдена. Вернитесь на главную страницу сайта архитектурно-проектного бюро «Ника Формат».">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+.error-inner {
+  text-align: center;
+  max-width: 580px;
+  padding: 0 48px;
+}
+.error-mark {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(200,150,12,0.7), transparent);
+  margin: 0 auto 40px;
+}
+.error-label {
+  font-family: var(--sans);
+  font-size: 9px; font-weight: 500;
+  letter-spacing: 0.36em; color: var(--gold);
+  margin-bottom: 28px; opacity: 0.8;
+  user-select: none; -webkit-user-select: none;
+}
+.error-title {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400; color: var(--white);
+  line-height: 1.15; margin-bottom: 12px;
+  letter-spacing: 0.01em;
+  user-select: none; -webkit-user-select: none;
+}
+.error-text {
+  font-family: var(--sans); font-size: 13px;
+  font-weight: 300; color: rgba(138,134,126,0.7);
+  line-height: 1.9; margin-bottom: 36px;
+  letter-spacing: 0.02em;
+}
+.error-rule {
+  width: 40px; height: 1px;
+  background: rgba(200,150,12,0.3);
+  margin: 0 auto 48px;
+}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div id="bg-dim"></div>
+
+<header id="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img class="logo-img" src="logo-light.png" alt="NF">
+      <div class="logo-text">
+        <span class="logo-main">NIKA <span>FORMAT</span></span>
+        <span class="logo-sub">Архитектурно-проектное бюро</span>
+      </div>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+      <a href="about.html" class="nav-link">О КОМПАНИИ</a>
+      <a href="gallery.html" class="nav-link">ГАЛЕРЕЯ РАБОТ</a>
+      <a href="contacts.html" class="nav-link">КОНТАКТЫ</a>
+      <a href="vacancy.html" class="nav-link">ВАКАНСИИ</a>
+    </nav>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mobile-close" id="mobile-close">✕</button>
+  <a href="index.html" class="mobile-nav-link">ГЛАВНАЯ</a>
+  <a href="about.html" class="mobile-nav-link">О КОМПАНИИ</a>
+  <a href="gallery.html" class="mobile-nav-link">ГАЛЕРЕЯ РАБОТ</a>
+  <a href="contacts.html" class="mobile-nav-link">КОНТАКТЫ</a>
+  <a href="vacancy.html" class="mobile-nav-link">ВАКАНСИИ</a>
+</nav>
+
+<div class="error-page">
+  <div class="error-inner">
+    <h1 class="error-title">Запрашиваемая страница<br>не существует</h1>
+    <p class="error-text">Возможно, адрес был введён с ошибкой,<br>или страница была перемещена либо удалена</p>
+    <a href="index.html" class="btn-ghost">Вернуться на главную</a>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
